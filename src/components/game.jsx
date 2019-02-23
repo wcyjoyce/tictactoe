@@ -5,14 +5,12 @@ class Game extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // history: [{
-        squares: Array(9).fill(null),
-      // }],
+      squares: Array(9).fill(null),
       nextPlayer: true,
     };
   }
 
-  calculateWinner(squares) {
+  calculateWinner = (squares) => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -35,17 +33,10 @@ class Game extends Component {
   render() {
     return (
       <div className="game">
-        <div className="game-board">
-          <Board
-            squares={this.state.squares}
-            nextPlayer={this.state.nextPlayer}
-            calculateWinner={this.calculateWinner}
-          />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+        <Board
+          squares={this.state.squares}
+          calculateWinner={this.calculateWinner}
+        />
       </div>
     );
   }
