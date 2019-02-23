@@ -1,30 +1,3 @@
-# react-boilerplate
+# Tic-Tac-Toe
 
-Simple react starter with the following config:
-
-- React, ReactDOM
-- Webpack 4
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
-
-## Scripts
-
-To start the local Webpack Dev Server (usually on port `8080`):
-
-```bash
-yarn start
-```
-
-To lint all JavaScript files in the `src` folder:
-
-```bash
-yarn lint
-```
-
-To build and deploy your app to `gh-pages` branch on the GitHub repo:
-
-```bash
-yarn deploy
-```
+This is a simple Tic-Tac-Toe game that I created with React from the [official React tutorial](https://reactjs.org/tutorial/tutorial.html). The design is inspired by this [Dribbble](https://cdn.dribbble.com/users/784413/screenshots/4426182/tic-tac-toe.gif), which you can check out more of the creator's work [here](http://yi-nie.com/index.html).
