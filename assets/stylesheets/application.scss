@@ -1,50 +1,58 @@
+@import "game";
+@import "player";
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-}
-
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
+  font-family: "Varela Round", sans-serif;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
 }
 
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
+.flex {
   display: flex;
-  flex-direction: row;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.game-info {
-  margin-left: 20px;
+.left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin: 0px 10px;
+
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 65px;
+    color: #3F5166;
+    margin: 20px 0px;
+  }
+
+  button {
+    font-family: "Varela Round", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: none;
+    border: 1px solid #3F5166;
+    padding: 7.5px 15px;
+    border-radius: 20px;
+    margin: 15px 0px;
+
+    &:hover {
+      border: 1px solid #909090;
+      color: #909090;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.right {
+  width: 30%;
+  padding: 0px 10px;
 }

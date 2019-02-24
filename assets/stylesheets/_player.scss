@@ -1,0 +1,31 @@
+.players {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.player {
+  color: #DEDEDE;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #DEDEDE;
+
+  &.X {
+    border-bottom: 5px solid #60BAD1;
+  }
+
+  &.O {
+    border-bottom: 5px solid #D95988;
+  }
+}
+
+.X {
+  color: #60BAD1;
+  padding-bottom: 5px;
+}
+
+.O {
+  color: #D95988;
+  padding-bottom: 5px;
+}

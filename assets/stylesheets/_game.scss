@@ -1,0 +1,74 @@
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  border: none;
+
+  &:first-child {
+    border-bottom: 2.5px solid #CDE0F2;
+  }
+
+  &:last-child {
+    border-top: 2.5px solid #CDE0F2;
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .square {
+    &:first-child {
+      border-right: 2.5px solid #CDE0F2;
+    }
+
+    &:last-child {
+      border-left: 2.5px solid #CDE0F2;
+    }
+  }
+}
+
+.square {
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  background: none;
+  height: 100px;
+  width: 125px;
+  border: none;
+  padding: 0;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.status {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+
+  .winner {
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+
+  .message {
+    font-family: "Open Sans", sans-serif;
+    color: #3F5166;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0px 10px 0px 30px;
+  }
+
+  img {
+    height: 40px;
+  }
+
+}
